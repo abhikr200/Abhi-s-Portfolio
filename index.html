@@ -179,7 +179,7 @@
             <h2 class="title">Contact me</h2>
                <center> <div class="contain">
                
-               <form>
+                    <form method="POST" action="https://formspree.io/f/mgedpnra">
                     <div style="width: 50%;">
                           <h4>DROP ME A LINE</h4>
                          <div class="name">
@@ -193,6 +193,8 @@
                          </div>
                          <div class="button">
                               <button id="send" onclick="message()">Send</button>
+                              <input type="hidden" name="_subject" value="Getting in touch with Abhishek Kumar" />
+						<input type="hidden" name="_next" value=thankyou.html />
                          </div>
                     </div> 
           </div>          
