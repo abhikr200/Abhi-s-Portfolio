@@ -28,5 +28,4 @@ $('.scroll-up-btn').addClass("show");
   	$('.menu-btn i').toggleClass("active");    
   });
  }); 
-
  
