@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@500&display=swap" rel="stylesheet');
 *{
         margin: 0;
         padding: 0;
@@ -87,12 +88,13 @@ section{
     padding: 20px 0;
     /*background: crimson;*/
     font-family: 'Ubuntu',sans-serif;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/
 }
 
 .navbar.sticky{
     padding: 5px 0;
-    background: crimson;
+    /*background: crimson;*/
+    background: #2F4F4F;
 }
 
 .navbar .max-width{
@@ -132,7 +134,7 @@ section{
  }
 
  .navbar .menu li a:hover{
- 	color: crimson;
+ 	color: whitesmoke;
  }
 
  .navbar.sticky .menu li a:hover{
@@ -143,7 +145,7 @@ section{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #2F4F4F;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -170,11 +172,13 @@ section{
 /* home section styling */
 .home{
     display: flex;
-    background: url("../images/cover.jpg") no-repeat center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);
-    background-color: #222;
+    /*background: url("../images/cover.jpg") no-repeat center;*/
+    background-color: #0f1824;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);
+    /*background-color: #222;*/
     background-size: cover;
-    background-color: #222;
+    /*background-color: #222;*/
+
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -192,28 +196,36 @@ section{
 }
 
 .home .home-content .text-1{
-    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #08fdd8;
+    /*font-size: 20px;
     font-weight: 500;
-    color: whitesmoke;
+    color: whitesmoke;*/
 }
 
 .home .home-content .text-2{
-    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.0;
+    color: #08fdd8;
+    /*font-size: 40px;
     font-weight: 600;
     margin-left: -3px;
-    color: crimson;
+    color: crimson;*/
 }
 
 .home .home-content .text-3{
-    font-size: 45px;
+    font-size: 2.0rem;
     margin: 5px 0;
     color: white;
 }
 
 .home .home-content .text-4{
-    font-size: 25px;
+    font-size: 1.2rem;
     margin: 5px 0;
-    color: white;
+    color: #08fdd8;
 }
 
 .home .home-content .text-3 span{
@@ -308,11 +320,12 @@ section{
 
 .Projects{
     color: whitesmoke;    
-    background: url("../images/cover.jpg") no-repeat center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);
-    }
+    /*background: url("../images/cover.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);*/
+    background-color: #0f1824;
+}
 .Projects .title::before{
-    /*background: whitesmoke;*/   
+    background: none;   
 }
 .Projects .title::after{
     background: none;
@@ -483,19 +496,20 @@ section{
 
 .contact{
     color: white;    
-    background: url("../images/cover.jpg") no-repeat center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);
+    /*background: url("../images/cover.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)),url(../images/cover.jpg);*/
+    background-color: #0f1824;
     height: auto;
 }
 .contact .title::before{
-    /*background: white;*/   
+    background: none;   
 }
 .contact .title::after{
     background: none;
     content: "get in touch";
 }
 contain{
-    width: 500px;
+    width: 400px;
     height: auto;
     background-color: #fff;
     border-radius: 8px;
@@ -527,7 +541,7 @@ h4{
     color: #bbb;
 }
 .name input{
-    width: 100%;
+    width: 80%;
     padding: 20px 60px;
     border: none;
     outline: none;
@@ -540,7 +554,7 @@ h4{
     font-weight: 500;
 }
 .email{
-    width: 100%;
+    width: 80%;
     position: relative;
     margin-bottom: 15px;
 }
@@ -579,7 +593,7 @@ h4{
     color: #bbb;
 }
 .message-box textarea{
-    width: 100%;
+    width: 80%;
     padding: 20px 60px;
     border: none;
     outline: none;
@@ -593,7 +607,7 @@ h4{
 }
 
 .button{
-    width: 100%;
+    width: 80%;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -602,7 +616,7 @@ h4{
     padding: 10px;
     font-size: 20px;
     color: #fff;
-    background-color: crimson;
+    background-color: #2F4F4F;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -629,12 +643,12 @@ footer{
 footer h1{
     font-size: 17px;
     font-weight: 500;
-    color: white;
+    color: #08fdd8;
 }
 footer h2{
     font-size: 13px;
     font-weight: 100;
-    color: white;
+    color: #08fdd8;
 }
 footer span a{
     color: white;
