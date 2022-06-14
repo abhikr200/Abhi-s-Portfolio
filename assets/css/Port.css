@@ -41,8 +41,8 @@ html{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 450;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
@@ -52,7 +52,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    /*width: 180px;*/
     height: 3px;
     background: #111;
     transform: translateX(-50%);
@@ -61,7 +61,7 @@ section .title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
-    font-size: 20px;
+    font-size: 15px;
     color: crimson;
     padding: 0 5px;
     background: #fff;
@@ -464,6 +464,13 @@ section{
 }
 
 .ui-widget:nth-child(10){
+    border-left-color: crimson;
+    border-top-color: crimson;
+    border-right-color: crimson;
+    border-bottom-color: #fff;
+}
+
+.ui-widget:nth-child(11){
     border-left-color: crimson;
     border-top-color: crimson;
     border-right-color: crimson;
