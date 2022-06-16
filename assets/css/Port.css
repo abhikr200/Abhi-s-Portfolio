@@ -261,15 +261,15 @@ section{
 .Projects .Proj-content{
     display: grid;
     position: relative;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));
     gap: 2em;
 }
 
-.about .about-content .left{
-    /*width: 45%;*/
+/*.about .about-content .left{
+    width: 45%;
     position: relative;
 }
 
@@ -280,10 +280,11 @@ section{
     object-fit: fill;
     border-radius: 80px 80px;
     padding: 0px 2em;
-}
+    
+}*/
 
 .about .about-content .right{
-    /*width: 55%;*/
+    width: 100%;
     position: relative;
 }
 
@@ -298,18 +299,19 @@ section{
     color: crimson;
 }
 .about .about-content .right p{
-    text-align: justify;
+   /* text-align: justify;*/
     font-weight: 400;
+    font-size: 1em;
 }
 .about .about-content .right a{
-    display:  inline-block;
-    background: crimson;
-    color: #fff;
-    front-size:  20px;
-    padding: 10px 30px;
+    /*display:  inline-block;*/
+    /*background: crimson;*/
+    /*color: #fff;*/
+    font-size:  20px;
+    /*padding: 10px 30px;*/
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+   /* border: 2px solid crimson;*/
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -387,10 +389,10 @@ section{
 .ui-widget{
     position: relative;
     display: inline-block;
-    width: 7rem;
-    height: 7rem;
-    margin: 1.5rem;
-    border: 0.3rem solid #ff6464;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+    border: 0.25rem solid #ff6464;
     text-align: center;
     border-radius: 9rem;
     box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
@@ -531,7 +533,7 @@ contain{
     
 }
 h4{
-    font-size: 30px;
+    font-size: 20px;
     margin: 15px;
 }
 .name{
@@ -548,8 +550,8 @@ h4{
     color: #bbb;
 }
 .name input{
-    width: 80%;
-    padding: 20px 60px;
+    width: 70%;
+    padding: 10px 40px;
     border: none;
     outline: none;
     font-size: 15px;
@@ -574,8 +576,8 @@ h4{
     color: #bbb;
 }
 .email input{
-    width: 100%;
-    padding: 20px 60px;
+    width: 90%;
+    padding: 10px 40px;
     border: none;
     outline: none;
     font-size: 15px;
@@ -600,8 +602,8 @@ h4{
     color: #bbb;
 }
 .message-box textarea{
-    width: 80%;
-    padding: 20px 60px;
+    width: 75%;
+    padding: 0px 40px;
     border: none;
     outline: none;
     font-size: 15px;
@@ -619,7 +621,7 @@ h4{
     margin-bottom: 20px;
 }
 .button button{
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 20px;
     color: #fff;
